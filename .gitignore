@@ -1,0 +1,27 @@
+# Keil uVision build outputs
+Objects/
+Listings/
+DebugConfig/
+*.bak
+*.dep
+*.crf
+*.d
+*.o
+*.axf
+*.htm
+*.lnp
+
+# Keil user-specific settings
+*.uvoptx
+*.uvguix.*
+JLinkLog.txt
+JLinkSettings.ini
+
+# IDE junk
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Large reference documents 
+*.pdf
