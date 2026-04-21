@@ -134,7 +134,7 @@ Writing an RTOS without HAL means spending a lot of time staring at PDFs. If you
 
 ## A Note On How This Started
 
-The project started from Israel Gbati's excellent Udemy course, [RTOS: Building from the Ground Up on ARM Processors](https://www.udemy.com/course/rtos-building-from-ground-up-on-arm-processors/). The first few primitives (the round-robin scheduler, the initial stack frame layout, the naked context switch) follow its structure closely because there's really only one sensible way to do that on a Cortex-M.
+The project started from Israel Gbati's excellent Udemy course, [Build Your Own RealTime OS (RTOS) From Ground Up™ on ARM 1](https://www.udemy.com/course/rtos-building-from-ground-up-on-arm-processors/). The first few primitives (the round-robin scheduler, the initial stack frame layout, the naked context switch) follow its structure closely because there's really only one sensible way to do that on a Cortex-M.
 
 Everything after that — priority scheduling, priority inheritance, the queue variants, software timers, stack canaries, CPU accounting, the `TIM2` decoupling from SysTick, the idle task — grew out of bumping into problems while building the demo and figuring out how to fix them. Debugging a stuck priority inversion by staring at `currentPt` in Keil's Watch window is how you really learn what a mutex is.
 
